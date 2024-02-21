@@ -1,0 +1,58 @@
+<h1> HTML 4.1 : 14 points  </h1>
+- คำนำหน้า มีตัวเลือกคือ นาย นาง และนางสาว <br>
+- ชื่อจริง และนามสกุล บันทึกข้อมูลได้มากสุด 5 ตัวอักษร<br>
+- วันเกิดใช้เป็นแบบปฏิทิน <br>
+- รหัสนิสิตบันทึกได้แค่ตัวเลขเท่านั้น <br>
+- รหัสผ่าน เมื่อบันทึกจะเห็นข้อความเป็นจุดกลมดำ <br>
+- อีเมล บังคับผู้ใช้ให้บันทึกในรูปแบบอีเมล <br>
+- สาขามีตัวเลือกเป็น คณะแพทยศาสตร์ คณะพยายาลศาสตร์ และคณะวิทยาการสารสนเทศ ตามลำดับ โดยเลือกคณะวิทยาการสารสนเทศเป็นค่าเริ่มต้น และไม่สามารถเปลี่ยนแปลงค่าได้ <br>
+- นิสิตชั้นปีที่ ให้กำหนดค่าเริ่มต้นเป็น 3 และเปลี่ยนแปลงค่าไม่ได้ <br>
+- ตำแหน่งประกอบด้วย Team leader, Developer, Quality, Support ชนิดเลือกได้รายการเดียว และเลือก Developer เป็นค่าเริ่มต้น <br>
+- ภาษาที่ถนัด ประกอบด้วย HTML, CSS, MySQL, JS, PHP ชนิดเลือกได้หลายรายการ โดยเลือกทุกภาษาเป็นค่าเริ่มต้น <br><br>
+
+<!-- Coding html 4.1 here!!!! -->
+<form>
+    <h1>แบบสอบถามข้อมูลส่วนบุคคล</h1> 
+    <hr>
+    <label for="prefix">คำนำหน้า</label>
+    <select name="prefix" id="prefix">
+        <option value="นาย">นาย</option>
+        <option value="นาง">นาง</option>
+        <option value="นางสาว">นางสาว</option>
+    </select>
+    <br><br>
+    <label for="fname">ชื่อจริง <input type="text" name="fname" id="fname"></label>
+    <label for="lname">นามสกุล <input type="text" name="lname" id="lname"></label>
+    <br><br>
+    <label for="dob">วันเกิด <input type="date" name="dob" id="dob"></label>
+    <br><br>
+    <label for="stuid">รหัสนิสิต <input type="text" name="stuid" id="stuid"></label>
+    <br><br>
+    <label for="stupass">รหัสผ่าน <input type="text" name="stupass" id="stupass"></label>
+    <br><br>
+    <label for="mail">อีเมลล์ <input type="email" name="mail" id="mail" placeholder="example@gmail.com"></label>
+    <br><br>
+    <hr>
+    <label for="fac">สาขา</label>
+    <select name="fac" id="fac" disabled>
+        <option value="คณะแพทยศาสตร์">คณะแพทยศาสตร์</option>
+        <option value="คณะพยายาลศาสตร์">คณะพยายาลศาสตร์</option>
+        <option value="และคณะวิทยาการสารสนเทศ" selected>และคณะวิทยาการสารสนเทศ</option>
+    </select> 
+    <br><br>
+    <label for="mail">นิสิตชั้นปีที่ <input type="email" name="mail" id="mail" placeholder="3" disabled></label>
+    <br><br>
+    <label for="role">ตำแหน่ง</label><br>
+    <input type="radio" id="role" name="role" value="Team Leader"> Team Leader <br>
+    <input type="radio" id="role" name="role" value="Deverloper" checked> Deverloper <br>
+    <input type="radio" id="role" name="role" value="Quality"> Quality <br>
+    <input type="radio" id="role" name="role" value="Support"> Support <br>
+    <br>
+    <label for="skill">ตำแหน่ง</label><br>
+    <input type="checkbox" id="skill" name="skill" checked value="HTML"> HTML <br>
+    <input type="checkbox" id="skill" name="skill" checked value="CSS"> CSS <br>
+    <input type="checkbox" id="skill" name="skill" checked value="MySQL"> MySQL <br>
+    <input type="checkbox" id="skill" name="skill" checked value="JS"> JS <br>
+    <input type="checkbox" id="skill" name="skill" checked value="PHP"> PHP <br>
+</form>
+<!-- Coding html 4.1 here!!!! -->

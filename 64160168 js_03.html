@@ -1,0 +1,61 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<h1> JavaScript 3.1 : 7 points  </h1>
+- พิมพ์ข้อความลงในช่อง "รับค่า" <br>
+- แปลงตัวอักษรพิมพ์เล็ก-พิมพ์ใหญ่เป็นไปในทางตรงกันข้าม และแสดงในช่อง "ผลลัพธ์" <br><br>
+
+<!-- Coding JavaScript 3.1 here!!!! -->
+
+<form class="form-horizontal">								
+	<div class="form-group">
+		<label for="focusedinput" class="col-sm-2 control-label">รับค่า</label>
+		<div class="col-sm-8">
+			<input type="text" class="form-control" id="opt3_1" name="opt3_1" value="" />
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="disabledinput" class="col-sm-2 control-label">ผลลัพธ์</label>
+		<div class="col-sm-8">
+			<input disabled type="text" class="form-control" id="display3_1" name="display3_1" >
+		</div>
+	</div>
+</form>
+
+<!-- Coding JavaScript 3.1 here!!!! -->
+
+
+
+<hr>
+<h1> JavaScript 3.2 : 8 points  </h1>
+- คลิกที่ปุ่ม "คลิกที่นี่ JS 3.2" จะทำการเพิ่มแถวในตารางทีละ 1 แถว <br>
+- แต่ละแถวประกอบด้วยคอลัมน์ ลำดับของนิสิต และช่องสำหรับกรอกข้อมูล <br><br>
+
+<!-- Coding JavaScript 3.2 here!!!! -->
+
+<button class="btn btn-primary"  id="btn3_2" >คลิกที่นี่ JS 3.2</button>
+<table id="tb_list" class="table table-striped" border="1">
+	<thead>
+		<tr class="info" >
+			<td colspan="2" >รายชื่อนิสิต</td>
+		</tr>
+	</thead>
+	<tbody></tbody>
+	</table>
+
+<script>
+	let res = document.getElementById("display3_1");
+	$('#opt3_1').keyup(function () {
+		let tmp = $(this).val()
+		$('#display3_1').val(tmp);
+	});
+
+	let i=0;
+	
+	$("button").click(function(){
+		let newRow = `<tr><td>นิสิตคนที่ ${++i}</td><td><input id="name" name="name" type="text" placeholder="กอรกชื่อนิสิต คนที่ ${i}"></td></tr>`
+		$("tbody").append(newRow);
+	});
+</script>
+
+<!-- Coding JavaScript 3.2 here!!!! -->
+

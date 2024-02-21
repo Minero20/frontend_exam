@@ -1,0 +1,162 @@
+<h1> CSS 3.1 : 12 points  </h1>
+- รูปภาพ กว้าง 150 px สูง 220 px อยู่กึ่งกลางของช่อง <br>
+- หัวตารางสูง 50 px ตัวหนังสือที่หัวตารางสี #7bd อยู่กลางและชิดด้านล่างขอบช่อง และไม่มีขอบหัวตาราง <br>
+- เนื้อหา/ข้อความในตารางใช้สีขาวทั้งหมด พื้นหลังใช้สี #111a22 <br>
+- ขอบตารางในส่วนเนื้อหาใช้สีขาว <br>
+- คอลัมน์ "ตัวเลือก" กว้าง 5%, คอลัมน์ "ชื่อภาพยนตร์" กว้าง 10%, คอลัมน์ "รายละเอียด" กว้าง 20% <br>
+- คอลัมน์ "เรื่องย่อ" กว้าง 45%, คอลัมน์ "รูป" กว้าง 20%,  <br>
+- คอลัมน์ "ตัวเลือก" แสดงปุ่ม radio ซึ่ง radio มีขนาดกว้าง 26 px สูง 26 px <br>
+- คอลัมน์ "รายละเอียด" แสดงเป็นรายการ สัญลักษณ์สี่เหลี่ยม และเว้นระยะห่างระหว่างบรรทัด 10 px <br>
+- คอลัมน์ "เรื่องย่อ" เนื้อหาในแต่ละ paragraph มีย่อหน้า 50 px <br><br>
+
+
+
+<!-- Coding CSS 3.1 here!!!! -->
+<style>
+      table {
+            font-size: 15px;
+      }
+      img {
+            height: 220px;
+            width: 150px;
+      }
+
+      .image {
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+      }
+
+      th {
+            color: #7bd;
+            height: 50px;
+            text-align: center;
+            border-top: hidden;
+            border-left: hidden;
+            border-right: hidden;
+            vertical-align: bottom;
+      }
+      td {
+            color: white;
+            padding-left: 7px;
+            padding-right: 7px;
+      }
+
+      .radio {
+            height: 26px;
+            width: 26px;
+            margin-left: 10px;
+      }
+
+      li {
+            line-height: 2.5;
+            list-style-type: square;
+            margin-top: 6px;
+            /* margin-bottom: px; */
+      }
+
+      #th1 {
+            width: 5%;
+      }
+      #th2 {
+            width: 10%;
+      }
+      #th3 {
+            width: 20%;
+      }
+      #th4 {
+            width: 45%;
+      }
+      #th5 {
+            width: 20%;
+      }
+      .paragraph {
+            text-indent: 50px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+      }
+</style>
+<table border="1" width="100%" style="background-color: #111a22;">
+      <tr>
+            <th id="th1"> ตัวเลือก</th>
+            <th id="th2"> ชื่อภาพยนตร์</th>
+            <th id="th3"> รายละเอียด </th>
+            <th id="th4"> เรื่องย่อ</th>
+            <th id="th5"> รูป</th>
+      </tr>
+      <tr>
+            <td>
+                  <input class="radio" type="radio" name="radio_check">
+            </td>
+            <td>
+                  Kono Subarashii Sekai ni Shukufuku wo!
+            </td>
+            <td>
+                  <ul>
+                        <li> Genres: Adventure, Comedy, Parody, Supernatural, Fantasy</li>
+                        <li> Episodes: 10 </li>
+                        <li> Aired: Jan 14, 2016 to Mar 17, 2016 </li>
+                        <li> Studios: Studio Deen</li>
+                        <li> Source: Light novel</li>
+
+                  </ul>
+
+
+            </td>
+            <td>
+                  <p class="paragraph">
+                        After dying a laughable and pathetic death on his way back from buying a game, high school student and recluse Kazuma Satou finds himself sitting before a beautiful but obnoxious goddess named Aqua. 
+                        She provides the NEET with two options: continue on to heaven or reincarnate in every gamer's dream—a real fantasy world! Choosing to start a new life, Kazuma is quickly tasked with defeating a Demon King who is terrorizing villages. 
+                        But before he goes, he can choose one item of any kind to aid him in his quest, and the future hero selects Aqua. But Kazuma has made a grave mistake—Aqua is completely useless!
+
+                  </p>
+                  <p class="paragraph">
+                        Unfortunately, their troubles don't end here; it turns out that living in such a world is far different from how it plays out in a game. Instead of going on a thrilling adventure, the duo must first work to pay for their living expenses. Indeed, their misfortunes have only just begun!
+                  </p>
+
+            </td>
+            <td class="image">
+                  <img src="https://animekimi.com/wp-content/uploads/2020/03/j73LuQcA21KvkVFcroWWMN8tTJv.jpg">
+            </td>
+      </tr>
+      <tr>
+            <td>
+                  <input class="radio" type="radio" name="radio_check">
+            </td>
+            <td>
+                  Baka to Test to Shoukanjuu
+            </td>
+            <td>
+                  <ul>
+                        <li> Genres: Comedy, Romance, School, SuperPower</li>
+                        <li> Episodes: 13 </li>
+                        <li> Aired: Jan 7, 2010 to Apr 1, 2010</li>
+                        <li>Studios: SILVER LINK.</li>
+                        <li> Source: Light novel</li>
+                  </ul>
+            </td>
+            <td>
+                  <p class="paragraph">
+                        Fumizuki Academy isn't a typical Japanese high school. 
+                        This unique institution has implemented a new and innovative system to sort its students. At the end of their freshman year, students take a test that divides up the student body. 
+                        The highest scorers are placed into A class, all the way down until F class, for the lowest of the low.
+                  </p>
+                  <p class="paragraph">
+                        Unfortunately for Akihisa Yoshii, his supposedly "great" intellect wasn't quite enough for such a test, and he's now stuck at the bottom of F class. 
+                        Naturally, F class has the worst facilities: not only rotten tatami mats and broken tables, but also outdated equipment and worn out furniture. On the bright side, his friend Yuuji Sakamoto is in the same class, and to everyone's surprise, 
+                        the genius girl Mizuki Himeji has also ended up in the same class due to an unforeseen fever on the day of the test.
+                  </p>
+                  <p class="paragraph">
+                        Unsatisfied with their perquisites, F class rallies behind Yuuji, determined to take on the higher-tiered classes in order to seize their perks by using the school's Examinations Summon Battle system. 
+                        The participants can summon fantasy characters—whose power levels are equal to their student's test scores—in an all-out battle. Will F class be able to rise to the top, or will they live up to everyone's expectations and fail?
+                  </p>
+
+            </td>
+            <td class="image">
+                  <img src="https://cdn.myanimelist.net/images/anime/3/50389.jpg">
+            </td>
+      </tr>
+</table>
+
+
+<!-- Coding CSS 3.1 here!!!! -->
